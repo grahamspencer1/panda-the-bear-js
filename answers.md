@@ -109,6 +109,24 @@ document.querySelector(".portfolio-container").appendChild(clonePikachu);
 
 > 3. Wow, that was so satisfying I think we should do it 10 more times. Use a for loop to help you do this.
 
-
+for (var i = 0; i < 10; i++) {
+  var pikachu = document.querySelector("#right-image img");
+  var clonePikachu = pikachu.cloneNode(true);
+  document.querySelector(".portfolio-container").appendChild(clonePikachu);
+};
 
 > 4. Let’s add a message about when the page was last updated. We'll do this by appending a new <li> element to the <ul> in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier).
+
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page last updated on');
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+
+var bio = document.querySelector('.bio-info');
+bio.appendChild(listItem);
+var currentDate = new Date();
+var rightSpan = document.createElement('span');
+var updatedOn = document.createTextNode(currentDate);
+rightSpan.appendChild(updatedOn);
+listItem.appendChild(rightSpan);
