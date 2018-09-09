@@ -75,21 +75,32 @@ yourBusiness.placeholder = "State Your Business";
 
 > 11. Give the name field a "value" attribute of "your nemesis".
 
-var yourNemesis = document.querySelector('#email');
-yourNemesis.placeholder = "Your Nemesis";
+var yourNemesis = document.querySelector('#name');
+yourNemesis.value = "Your Nemesis";
 
 //////////////////////////////////////////////////////////
 
 > 12. Change the value attribute of the email field to "koalathebear@gmail.com".
 
+var changeEmail = document.querySelector('#email');
+changeEmail.value = "koalathebear@gmail.com";
+
 //////////////////////////////////////////////////////////
 
 > 13. Change the value of the submit button on the contact form to "En garde!".
+
+var enGarde = document.querySelector('#submit');
+enGarde.value = "En garde!";
 
 //////////////////////////////////////////////////////////
 
 > 14. We should stop Koala from sending an email to Panda that they might regret! Find a way to disable the submit button (hint: familiarize yourself with the disabled attribute).
 
+var disableSubmit = document.querySelector('#submit').disabled = true;
+
 //////////////////////////////////////////////////////////
 
 > 15. We should help Panda protect their privacy by erasing their personal details from the sidebar.
+
+var hideDetails = document.querySelector('.bio-info');
+hideDetails.parentNode.removeChild(hideDetails);
