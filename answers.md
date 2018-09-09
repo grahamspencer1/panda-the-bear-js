@@ -61,13 +61,22 @@ iconColor.forEach(function(changeColor){
 
 > 9. Scroll down to the contact form. Change the placeholder attribute of the name field to "identify yourself".
 
+var idYourself = document.querySelector('#name');
+idYourself.placeholder = "Identify Yourself";
+
 //////////////////////////////////////////////////////////
 
 > 10. Change the placeholder attribute of the message field to "state your business".
 
+var yourBusiness = document.querySelector('#message');
+yourBusiness.placeholder = "State Your Business";
+
 //////////////////////////////////////////////////////////
 
 > 11. Give the name field a "value" attribute of "your nemesis".
+
+var yourNemesis = document.querySelector('#email');
+yourNemesis.placeholder = "Your Nemesis";
 
 //////////////////////////////////////////////////////////
 
